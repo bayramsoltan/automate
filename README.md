@@ -6,13 +6,9 @@
 
 
 <h1 align="center">
-Automating the Search for Artificial Life with Foundation Models
+Reproducibility Study of "Learning Perturbations to Explain
+Time Series Predictions"
 </h1>
-<p align="center">
-  📝 <a href="https://sakana.ai/asal">Blog</a> |
-  🌐 <a href="https://asal.sakana.ai/">Paper</a> |
-  📄 <a href="https://arxiv.org/abs/2412.17799">PDF</a>
-</p>
 <p align="center">
 <a href="https://colab.research.google.com/github/SakanaAI/asal/blob/main/asal.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 </p>
@@ -22,7 +18,21 @@ Automating the Search for Artificial Life with Foundation Models
 $^1$ MIT, $^2$ Sakana AI, $^3$ OpenAI, $^4$ The Swiss AI Lab IDSIA, $^5$ Independent
 
 ## Abstract
-With the recent Nobel Prize awarded for radical advances in protein discovery, foundation models (FMs) for exploring large combinatorial spaces promise to revolutionize many scientific fields. Artificial Life (ALife) has not yet integrated FMs, thus presenting a major opportunity for the field to alleviate the historical burden of relying chiefly on manual design and trial-and-error to discover the configurations of lifelike simulations. This paper presents, for the first time, a successful realization of this opportunity using vision-language FMs. The proposed approach, called *Automated Search for Artificial Life* (ASAL), (1) finds simulations that produce target phenomena, (2) discovers simulations that generate temporally open-ended novelty, and (3) illuminates an entire space of interestingly diverse simulations. Because of the generality of FMs, ASAL works effectively across a diverse range of ALife substrates including Boids, Particle Life, Game of Life, Lenia, and Neural Cellular Automata. A major result highlighting the potential of this technique is the discovery of previously unseen Lenia and Boids lifeforms, as well as cellular automata that are open-ended like Conway’s Game of Life. Additionally, the use of FMs allows for the quantification of previously qualitative phenomena in a human-aligned way. This new paradigm promises to accelerate ALife research beyond what is possible through human ingenuity alone.
+We attempt to reproduce and extend the results presented in Automating the
+Search for Artificial Life with Foundation Models, which introduced ASAL, a novel frame-
+work for discovering emergent behaviors in artificial life (ALife) simulations using foundation
+models. We investigated the core claims of the paper, specifically that (1) ASAL effectively
+discovers target phenomena, open-ended simulations, and diverse emergent behaviors across
+a variety of ALife substrates, and (2) the use of vision-language foundation models enables
+quantitative evaluations of emergent properties that align with human intuition. While
+some discrepancies arose in parameter-specific optimizations, our results broadly validate
+the primary findings of the original paper. Additionally, we propose new visualizations
+for mapping simulation diversity and analyze the sensitivity of ASAL’s metrics to various
+substrate configurations. Finally, we evaluate whether ASAL’s open-ended simulations ex-
+hibit unintended biases or failure cases and find that the model remains robust across our
+tested scenarios. Overall, our work supports and refines the conclusions of the original study
+while introducing additional insights into ASAL’s methodology and applications. Code and
+experimental details are available at this link.
 
 <div style="display: flex; justify-content: space-between;">
   <img src="https://pub.sakana.ai/asal_blog_assets/teaser.png" alt="Image 1" style="width: 48%;">
